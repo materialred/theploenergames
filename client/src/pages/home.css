@@ -1,0 +1,21 @@
+/* in your Home.css or global styles */
+.home-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(21, 21, 21); /* fallback background */
+}
+
+.home-content {
+  position: relative; /* so it sits above the aurora canvas */
+  z-index: 1;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.playerTable{
+  color: white;
+  text-align: left;
+}

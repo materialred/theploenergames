@@ -1,0 +1,36 @@
+{
+  "name": "ploener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -n SERVER,CLIENT -c green,blue \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm start",
+    "server": "cd server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurMagic/Ploener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ArthurMagic/Ploener/issues"
+  },
+  "homepage": "https://github.com/ArthurMagic/Ploener#readme",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.0",
+    "datatables.net": "^2.3.1",
+    "datatables.net-dt": "^2.3.1",
+    "datatables.net-responsive": "^3.0.4",
+    "datatables.net-responsive-dt": "^3.0.4",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
