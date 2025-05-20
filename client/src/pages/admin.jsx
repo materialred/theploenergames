@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import DecryptedText from '../components/DecryptedText';
 import './home.css';
@@ -13,7 +14,6 @@ export default function Home() {
       console.log('📥 Daten vom Server empfangen:', data);
       setPlayers(data);
     });
-
 
     // Clean up the socket listener when component unmounts
     return () => {
@@ -31,7 +31,7 @@ export default function Home() {
             sequential={true}
           />
         </h1>
-        <p>Hello</p>
+        <Button onClick={handleClick} variant="text">Text</Button>
         <div className="playerTable">
         <table id="playerAdminTable">
           <thead>
@@ -46,3 +46,7 @@ export default function Home() {
 
   );
 }
+
+  function handleClick() {
+    console.log('You clicked me!');
+  }

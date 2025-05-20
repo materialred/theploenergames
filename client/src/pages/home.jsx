@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import DecryptedText from '../components/DecryptedText';
 import './home.css';
 import socket from '../socket'; // oder '../socket' je nach Ordnerstruktur
-import playerTable from '../components/tables/player_table';
+import playerTable from '../components/tables/playerTable';
 
 export default function Home() {
   const [setPlayers] = useState([]);

@@ -14,11 +14,12 @@ import DataTable from 'datatables.net-dt';
 
 let admintable;
 socket.on('setupTable', (data) => {
- admintable = new DataTable('#playerTable', {
+ admintable = new DataTable('#playerAdminTable', {
   data: data,
       columns: [
-        { data: 'name' }
-        // Add more columns as needed
+        { data: 'uuid' },
+        { data: 'name' },
+        { data: 'created_at' }
       ],
       responsive: true
     });
@@ -27,9 +28,9 @@ socket.on('setupTable', (data) => {
 
 socket.on('playerData', (data) => {
   //console.log('Received table data:', data); // Log the received data for debugging
-  if (DataTable.isDataTable('#playerTable')) {
+  if (DataTable.isDataTable('#playerAdminTable')) {
     // Update data in existing DataTable
-   admintable.clear().rows.add("data").draw();
+   admintable.clear().rows.add(data).draw();
   }
 });
 

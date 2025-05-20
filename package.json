@@ -21,9 +21,6 @@
   },
   "homepage": "https://github.com/ArthurMagic/Ploener#readme",
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/material": "^7.1.0",
     "datatables.net": "^2.3.1",
     "datatables.net-dt": "^2.3.1",
     "datatables.net-responsive": "^3.0.4",
